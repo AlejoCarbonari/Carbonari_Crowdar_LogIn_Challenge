@@ -18,7 +18,7 @@ $ sudo apt-get --only-upgrade install google-chrome-stable <br />
 Una vez completados los pasos necesarios para la actualización del navegador, queda matar los procesos activos de chrome que pueden estar corriendo en segundo plano: <br />
 $ sudo pkill chrome <br />
 
-
+# TEST CASES
 
 FEATURES: LogIn HAPPY PATH
 
