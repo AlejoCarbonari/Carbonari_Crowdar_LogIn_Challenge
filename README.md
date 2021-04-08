@@ -26,6 +26,16 @@ $ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-
 $ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' <br />
 $ sudo apt update <br />
 
+# MAC OS
+
+# Brew Installation
+
+* CHROME * <br />
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" <br />
+$ brew install --cask google-chrome <br />
+
+* FIREFOX * <br />
+$ brew install --cask firefox <br />
 
 # TEST CASES
 
