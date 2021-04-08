@@ -3,14 +3,12 @@
 FEATURES: LogIn HAPPY PATH
 
 Background:
-> 
-✅ Dado que el usuario abre el navegador <br />
+> ✅ Dado que el usuario abre el navegador <br />
 ✅ Y navega hacia Saucedemo <br />
 ✅ Entonces debería visualizar la página de inicio <br />
 
 First Scenario: Usuario válido
-> 
-✅ Cuando el usuario ingresa "<username>" en el campo username <br />
+> ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
 ✅ Y "<password>" en el campo password <br />
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar el inventario de productos <br />
@@ -20,8 +18,7 @@ First Scenario: Usuario válido
       | standard_user           | secret_sauce | <br />
 
 Second Scenario: Usuario bloqueado & credenciales erróneas
-> 
-✅ Cuando el usuario ingresa "<username>" en el campo username <br />
+> ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
 ✅ Y "<password>" en el campo password <br />
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar un error con el siguiente mensaje: "<expectedMessage>" <br />
