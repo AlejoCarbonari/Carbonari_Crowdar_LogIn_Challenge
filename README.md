@@ -36,6 +36,25 @@ $ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-
 $ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' <br />
 $ sudo apt update <br />
 
+# Instalación y configuration de MAVEN
+
+$ sudo apt install maven
+           or
+$ wget https://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-X.X.X-bin.tar.gz -P /tmp/
+$ sudo tar xf /tmp/apache-maven-*.tar.gz -C /opt/
+$ sudo ln -s /opt/apache-maven-3.5.4 /opt/maven
+
+*Configuramos PATH
+$ export MAVEN_HOME="/opt/maven"
+$ export M2_HOME="/opt/maven"
+$ PATH=$M2_HOME/bin:$PATH
+$ export PATH=${M2_HOME}/bin:${PATH}
+$ sudo chmod +x /etc/profile.d/maven.sh
+$ source /etc/profile.d/maven.sh
+
+$ mvn -v >
+OUTPUT: Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fexx; 2018-06-17T15:33:14-03:00)
+
 # MAC OS
 
 # Brew Installation
