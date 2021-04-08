@@ -6,7 +6,7 @@ Bienvenidos a mi Challenge.
 
 Para correr las siguientes pruebas, deberemos contar con la última versión estable de Chrome. <br />
 
-*Linux OS* <br />
+# Linux OS
 Suponiendo que ya tiene instalada la clave de Repositorio Google Linux, siga los siguientes pasos: <br />
 
 En caso de no tener instalado chrome ejecute el siguiente comando en la terminal (CTRL+ALT+T): <br />
