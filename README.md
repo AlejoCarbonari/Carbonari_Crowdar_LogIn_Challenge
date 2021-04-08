@@ -13,9 +13,9 @@ First Scenario: Usuario válido
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar el inventario de productos <br />
 
-   Ejemplos: <br />
-      | username                | password     | <br />
-      | standard_user           | secret_sauce | <br />
+      Ejemplos: <br />
+         | username                | password     | <br />
+         | standard_user           | secret_sauce | <br />
 
 Second Scenario: Usuario bloqueado & credenciales erróneas
 > ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
