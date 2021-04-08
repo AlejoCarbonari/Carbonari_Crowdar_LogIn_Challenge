@@ -11,8 +11,13 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import io.cucumber.java.es.Y;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+
+import java.io.File;
+import java.io.IOException;
 
 public class Steps
 {
@@ -83,11 +88,10 @@ public class Steps
     /* SESSION CLOSE */
 
     @After
-    public void tearDown(Scenario scenario) {
+    public void tearDown(Scenario scenario) throws IOException {
         if (scenario.isFailed()) {
-            final byte[] screenshot = ((TakesScreenshot) acts.common.basePage.driver)
-                    .getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot, "failedStep.png"); //stick it in the report
+            File source_file = ((TakesScreenshot)basePage.driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(source_file, new File("target/cucumber-reports/failedImage.png"));
         }
         basePage.driver.close();
     }
