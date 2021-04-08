@@ -2,27 +2,60 @@ package common;
 
 import org.junit.Assert;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.*;
 
 import common.myUtils.Utils;
 
+import java.time.Duration;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class HomePage extends acts.common.basePage
 {
-    // estancia de la clase Utils
     Utils utils = new Utils();
     WebDriverWait wait;
 
     public void openBrowser()
     {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
-        driver = new ChromeDriver();
+        /* String os = System.getProperty("os.name");
+        switch(os)
+        {
+            case "Linux":
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+                break;
+            case "Windows":
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+                break;
+            case "Mac":
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver_mac");
+                break;
+            default:
+                System.out.println("Error, os name not found!");
+                break;
+        } */
+        String os = System.getProperty("os.name");
+        switch(os)
+        {
+            case "Linux":
+                if (System.getProperties().containsKey("webdriver.gecko.driver"))
+                {
+                    System.setProperty("webdriver.firefox.bin", "/usr/lib/firefox/firefox");
+                }
+                break;
+        }
+
+        driver = (System.getProperties().containsKey("webdriver.chrome.driver"))
+                ? (driver = new ChromeDriver())
+                : (driver = new FirefoxDriver());
     }
 
     public void GoToHomePage()
     {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/");
     }

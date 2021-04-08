@@ -18,7 +18,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>2.47.1</version>
+      <version>4.0.0-beta-1</version>
     </dependency>
 
     <dependency>
@@ -47,6 +47,7 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 
   <build>
@@ -59,13 +60,13 @@
           <includes>
             <include>**/*Runner.java</include>
           </includes>
-          <executions>
+    <!-- <executions>
             <execution>
               <goals>
                 <goal>verify</goal>
               </goals>
             </execution>
-          </executions>
+          </executions> -->
         </configuration>
       </plugin>
       <plugin>
