@@ -2,7 +2,7 @@
 
 Bienvenidos a mi Challenge.
 
-# Installation
+# Instalación
 
 Para correr las siguientes pruebas, deberemos contar con la última versión estable de Chrome. <br />
 
@@ -57,7 +57,7 @@ $ mvn -v <br />
 
 # MAC OS
 
-# Brew Installation
+# Instalación de BREW
 
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" <br />
 
@@ -67,7 +67,7 @@ $ brew install --cask google-chrome <br />
 * Firefox <br />
 $ brew install --cask firefox <br />
 
-# HOW TO RUN TESTS IN LINUX
+# CÓMO CORRER LOS TESTS EN LINUX
 
 *Clean all
 $ mvn clean
@@ -78,7 +78,7 @@ $ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver" <
 *Firefox <br />
 $ $ mvn test -Dwebdriver.gecko.driver="src/test/resources/drivers/geckodriver" <br />
 
-# HOW TO RUN TESTS IN MAC OS
+# CÓMO CORRER LOS TESTS EN MAC OS
 
 *Chrome <br />
 $ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver_mac" <br />
@@ -86,7 +86,7 @@ $ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver_ma
 *Firefox <br />
 $ mvn test -Dwebdriver.gecko.driver="src/test/resources/drivers/geckodriver_mac" <br />
 
-# HOW TO RUN TESTS IN WINDOWS
+# HCÓMO CORRER LOS TESTS EN WINDOWS
 
 *Chrome <br />
 $ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver.exe" <br />
@@ -96,7 +96,7 @@ $ mvn test -Dwebdriver.gecko.driver="src/test/resources/drivers/geckodriver.exe"
 
 
 
-# TEST CASES
+# CASOS DE PRUEBA
 
 FEATURES: LogIn HAPPY PATH
 
