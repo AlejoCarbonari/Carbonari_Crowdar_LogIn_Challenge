@@ -38,22 +38,22 @@ $ sudo apt update <br />
 
 # Instalación y configuration de MAVEN
 
-$ sudo apt install maven
-           or
-$ wget https://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-X.X.X-bin.tar.gz -P /tmp/
-$ sudo tar xf /tmp/apache-maven-*.tar.gz -C /opt/
-$ sudo ln -s /opt/apache-maven-3.5.4 /opt/maven
+$ sudo apt install maven <br />
+           or <br />
+$ wget https://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-X.X.X-bin.tar.gz -P /tmp/ <br />
+$ sudo tar xf /tmp/apache-maven-*.tar.gz -C /opt/ <br />
+$ sudo ln -s /opt/apache-maven-3.5.4 /opt/maven <br />
 
-*Configuramos PATH
-$ export MAVEN_HOME="/opt/maven"
-$ export M2_HOME="/opt/maven"
-$ PATH=$M2_HOME/bin:$PATH
-$ export PATH=${M2_HOME}/bin:${PATH}
-$ sudo chmod +x /etc/profile.d/maven.sh
-$ source /etc/profile.d/maven.sh
+*Configuramos PATH <br />
+$ export MAVEN_HOME="/opt/maven" <br />
+$ export M2_HOME="/opt/maven" <br />
+$ PATH=$M2_HOME/bin:$PATH <br />
+$ export PATH=${M2_HOME}/bin:${PATH} <br />
+$ sudo chmod +x /etc/profile.d/maven.sh <br />
+$ source /etc/profile.d/maven.sh <br />
 
 $ mvn -v >
-OUTPUT: Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fexx; 2018-06-17T15:33:14-03:00)
+OUTPUT: Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fexx; 2018-06-17T15:33:14-03:00) <br />
 
 # MAC OS
 
