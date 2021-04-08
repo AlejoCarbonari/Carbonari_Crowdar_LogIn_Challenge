@@ -13,7 +13,7 @@ First Scenario: Usuario válido
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar el inventario de productos <br />
 
-      Ejemplos: <br />
+      Ejemplos:
          | username                | password     | <br />
          | standard_user           | secret_sauce | <br />
 
