@@ -30,11 +30,11 @@ $ sudo apt update <br />
 
 # Brew Installation
 
-* CHROME * <br />
+* CHROME <br />
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" <br />
 $ brew install --cask google-chrome <br />
 
-* FIREFOX * <br />
+* FIREFOX <br />
 $ brew install --cask firefox <br />
 
 # TEST CASES
