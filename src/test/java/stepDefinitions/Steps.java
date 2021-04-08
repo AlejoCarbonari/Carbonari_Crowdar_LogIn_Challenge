@@ -91,7 +91,7 @@ public class Steps
     public void tearDown(Scenario scenario) throws IOException {
         if (scenario.isFailed()) {
             File source_file = ((TakesScreenshot)basePage.driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(source_file, new File("target/cucumber-reports/failedImage.png"));
+            FileUtils.copyFile(source_file, new File("target/cucumber-reports/failedStep.png"));
         }
         basePage.driver.close();
     }
