@@ -7,6 +7,8 @@ Bienvenidos a mi Challenge.
 Para correr las siguientes pruebas, deberemos contar con la última versión estable de Chrome. <br />
 
 # Linux OS
+
+* Chrome
 Suponiendo que ya tiene instalada la clave de Repositorio Google Linux, siga los siguientes pasos: <br />
 
 Dado el caso de no tener instalado el Repositorio Google Linux, vaya a la línea 25.
@@ -21,10 +23,19 @@ Una vez completados los pasos necesarios para la actualización del navegador, q
 $ sudo pkill chrome <br />
 
 
-# Instalación del Repositorio google-chrome <br />
+# Instalación del Repositorio google-chrome
+*Siga los mismos pasos que en la instalación de Chrome <br />
+
 $ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - <br />
 $ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' <br />
 $ sudo apt update <br />
+
+* Firefox <br />
+$ sudo add-apt-repository ppa:ubuntu-mozilla-security/ppa <br />
+$ sudo apt update <br />
+$ sudo apt install Firefox <br />
+
+$ sudo apt install --only-upgrade firefox <br />
 
 # MAC OS
 
@@ -32,10 +43,10 @@ $ sudo apt update <br />
 
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" <br />
 
-* CHROME <br />
+* Chrome <br />
 $ brew install --cask google-chrome <br />
 
-* FIREFOX <br />
+* Firefox <br />
 $ brew install --cask firefox <br />
 
 # TEST CASES
