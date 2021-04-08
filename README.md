@@ -52,8 +52,8 @@ $ export PATH=${M2_HOME}/bin:${PATH} <br />
 $ sudo chmod +x /etc/profile.d/maven.sh <br />
 $ source /etc/profile.d/maven.sh <br />
 
-$ mvn -v >
-OUTPUT: Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fexx; 2018-06-17T15:33:14-03:00) <br />
+$ mvn -v <br />
+> OUTPUT: Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fexx; 2018-06-17T15:33:14-03:00) <br />
 
 # MAC OS
 
