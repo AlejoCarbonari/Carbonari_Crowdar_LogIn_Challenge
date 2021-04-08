@@ -15,8 +15,8 @@ $ sudo apt-get install google-chrome-beta <br />
 De lo contrario, si necesita actualizar su navegador, ejecute lo siguiente: <br />
 $ sudo apt-get --only-upgrade install google-chrome-stable <br />
 
-Una vez completados los pasos necesarios para la actualización del navegador, queda matar los procesos activos de chrome que pueden estar corriendo en segundo plano:
-$ sudo pkill chrome
+Una vez completados los pasos necesarios para la actualización del navegador, queda matar los procesos activos de chrome que pueden estar corriendo en segundo plano: <br />
+$ sudo pkill chrome <br />
 
 
 
