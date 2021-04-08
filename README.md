@@ -69,4 +69,4 @@ Esquema del escenario: Usuario con problemas
             | username                | password     |
             | problem_user            | secret_sauce |
 
-   # Éste último paso fallará!
+   Éste último paso fallará!
