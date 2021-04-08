@@ -14,8 +14,8 @@ First Scenario: Usuario válido
 ✅ Entonces debería visualizar el inventario de productos <br />
 
       Ejemplos:
-         | username                | password     | <br />
-         | standard_user           | secret_sauce | <br />
+         | username                | password     |
+         | standard_user           | secret_sauce |
 
 Second Scenario: Usuario bloqueado & credenciales erróneas
 > ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
@@ -23,12 +23,12 @@ Second Scenario: Usuario bloqueado & credenciales erróneas
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar un error con el siguiente mensaje: "<expectedMessage>" <br />
 
-   Ejemplos: <br />
-   | username                | password     | expectedMessage                                                           | <br />
-   | locked_out_user         | secret_sauce | Epic sadface: Sorry, this user has been locked out.                       | <br />
-   | error_username          | secret_sauce | Epic sadface: Username and password do not match any user in this service | <br />
-   |                         | no_username  | Epic sadface: Username is required                                        | <br />
-   | no_password             |              | Epic sadface: Password is required                                        | <br />
+      Ejemplos:
+            | username                | password     | expectedMessage                                                           |
+            | locked_out_user         | secret_sauce | Epic sadface: Sorry, this user has been locked out.                       |
+            | error_username          | secret_sauce | Epic sadface: Username and password do not match any user in this service |
+            |                         | no_username  | Epic sadface: Username is required                                        |
+            | no_password             |              | Epic sadface: Password is required                                        |
       
 Esquema del escenario: Usuario con problemas
 > ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
@@ -36,8 +36,8 @@ Esquema del escenario: Usuario con problemas
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar correctamente las imágenes en el inventario <br />
 
-   Ejemplos: <br />
-   | username                | password     | <br />
-   | problem_user            | secret_sauce | <br />
+      Ejemplos:
+            | username                | password     |
+            | problem_user            | secret_sauce |
 
    # Éste último paso fallará!
