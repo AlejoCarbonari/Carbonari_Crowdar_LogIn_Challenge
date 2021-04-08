@@ -106,8 +106,8 @@ Background:
 ✅ Entonces debería visualizar la página de inicio <br />
 
 First Scenario: Usuario válido
-> ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
-✅ Y "<password>" en el campo password <br />
+> ✅ Cuando el usuario ingresa "username" en el campo username <br />
+✅ Y "password" en el campo password <br />
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar el inventario de productos <br />
 
@@ -116,10 +116,10 @@ First Scenario: Usuario válido
          | standard_user           | secret_sauce |
 
 Second Scenario: Usuario bloqueado & credenciales erróneas
-> ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
-✅ Y "<password>" en el campo password <br />
+> ✅ Cuando el usuario ingresa "username" en el campo username <br />
+✅ Y "password" en el campo password <br />
 ✅ Y hace click en el botón submit <br />
-✅ Entonces debería visualizar un error con el siguiente mensaje: "<expectedMessage>" <br />
+✅ Entonces debería visualizar un error con el siguiente mensaje: "expectedMessage" <br />
 
       Ejemplos:
             | username                | password     | expectedMessage                                                           |
@@ -129,8 +129,8 @@ Second Scenario: Usuario bloqueado & credenciales erróneas
             | no_password             |              | Epic sadface: Password is required                                        |
       
 Esquema del escenario: Usuario con problemas
-> ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
-✅ Y "<password>" en el campo password <br />
+> ✅ Cuando el usuario ingresa "username" en el campo username <br />
+✅ Y "password" en el campo password <br />
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar correctamente las imágenes en el inventario <br />
 
