@@ -4,16 +4,16 @@ Bienvenidos a mi Challenge.
 
 # Installation
 
-Para correr las siguientes pruebas, deberemos contar con la última versión estable de Chrome.
+Para correr las siguientes pruebas, deberemos contar con la última versión estable de Chrome. <br />
 
-*Linux OS*
-Suponiendo que ya tiene instalada la clave de Repositorio Google Linux, siga los siguientes pasos:
+*Linux OS* <br />
+Suponiendo que ya tiene instalada la clave de Repositorio Google Linux, siga los siguientes pasos: <br />
 
-En caso de no tener instalado chrome ejecute el siguiente comando en la terminal (CTRL+ALT+T):
-$ sudo apt-get install google-chrome-beta
+En caso de no tener instalado chrome ejecute el siguiente comando en la terminal (CTRL+ALT+T): <br />
+$ sudo apt-get install google-chrome-beta <br />
 
-De lo contrario, si necesita actualizar su navegador, ejecute lo siguiente:
-$ sudo apt-get --only-upgrade install google-chrome-stable
+De lo contrario, si necesita actualizar su navegador, ejecute lo siguiente: <br />
+$ sudo apt-get --only-upgrade install google-chrome-stable <br />
 
 
 
