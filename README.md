@@ -41,6 +41,7 @@ $ sudo apt update <br />
 $ sudo apt install maven <br />
            or <br />
 $ wget https://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-X.X.X-bin.tar.gz -P /tmp/ <br />
+
 $ sudo tar xf /tmp/apache-maven-*.tar.gz -C /opt/ <br />
 $ sudo ln -s /opt/apache-maven-3.5.4 /opt/maven <br />
 
