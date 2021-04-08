@@ -48,6 +48,35 @@ $ brew install --cask google-chrome <br />
 * Firefox <br />
 $ brew install --cask firefox <br />
 
+# HOW TO RUN TESTS IN LINUX
+
+*Clean all
+$ mvn clean
+
+*Chrome <br />
+$ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver" <br />
+
+*Firefox <br />
+$ $ mvn test -Dwebdriver.gecko.driver="src/test/resources/drivers/geckodriver" <br />
+
+# HOW TO RUN TESTS IN MAC OS
+
+*Chrome <br />
+$ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver_mac" <br />
+
+*Firefox <br />
+$ mvn test -Dwebdriver.gecko.driver="src/test/resources/drivers/geckodriver_mac" <br />
+
+# HOW TO RUN TESTS IN WINDOWS
+
+*Chrome <br />
+$ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver.exe" <br />
+
+*Firefox <br />
+$ mvn test -Dwebdriver.gecko.driver="src/test/resources/drivers/geckodriver.exe" <br />
+
+
+
 # TEST CASES
 
 FEATURES: LogIn HAPPY PATH
