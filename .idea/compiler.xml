@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Crowdar_LogIn_Demo" />
+        <module name="Crowdar_Login_Demo" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,14 +1,18 @@
 package stepDefinitions;
 
+import acts.common.basePage;
 import common.HomePage;
 import common.InventoryPage;
 
 import common.myUtils.Utils;
+import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import io.cucumber.java.es.Y;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class Steps
 {
@@ -79,10 +83,13 @@ public class Steps
     /* SESSION CLOSE */
 
     @After
-    public void shutdownPage()
-    {
-        // session.close();
-        utils.closePage();
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
+            final byte[] screenshot = ((TakesScreenshot) acts.common.basePage.driver)
+                    .getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot, "failedStep.png"); //stick it in the report
+        }
+        basePage.driver.close();
     }
 
 }
