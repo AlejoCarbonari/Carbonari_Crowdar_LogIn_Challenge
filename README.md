@@ -31,8 +31,7 @@ Second Scenario: Usuario bloqueado & credenciales erróneas
       | no_password             |              | Epic sadface: Password is required                                        | <br />
       
 Esquema del escenario: Usuario con problemas
->
-✅ Cuando el usuario ingresa "<username>" en el campo username <br />
+> ✅ Cuando el usuario ingresa "<username>" en el campo username <br />
 ✅ Y "<password>" en el campo password <br />
 ✅ Y hace click en el botón submit <br />
 ✅ Entonces debería visualizar correctamente las imágenes en el inventario <br />
