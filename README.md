@@ -8,7 +8,7 @@ Para correr las siguientes pruebas, deberemos contar con la última versión est
 
 # Linux OS
 
-* Chrome
+* Chrome <br />
 Suponiendo que ya tiene instalada la clave de Repositorio Google Linux, siga los siguientes pasos: <br />
 
 Dado el caso de no tener instalado el Repositorio Google Linux, consulte más abajo.
