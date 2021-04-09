@@ -36,7 +36,7 @@ $ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-
 $ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' <br />
 $ sudo apt update <br />
 
-# Instalación y configuration de MAVEN
+# Instalación y configuración de MAVEN
 
 $ sudo apt install maven <br />
            or <br />
