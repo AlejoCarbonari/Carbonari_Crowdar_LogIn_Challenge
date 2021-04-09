@@ -4,7 +4,7 @@ Bienvenidos a mi Challenge.
 
 # Instalación
 
-Para correr las siguientes pruebas, deberemos contar con la última versión estable de Chrome. <br />
+Para correr las siguientes pruebas, deberemos contar con la última versión estable de Chrome y/o Firefox v62+. <br />
 
 # Linux OS
 
