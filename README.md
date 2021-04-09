@@ -70,7 +70,7 @@ $ brew install --cask firefox <br />
 
 # CÓMO CORRER LOS TESTS EN LINUX
 
-*Clean all
+*Clean all <br />
 $ mvn clean
 
 *Chrome <br />
@@ -87,7 +87,7 @@ $ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver_ma
 *Firefox <br />
 $ mvn test -Dwebdriver.gecko.driver="src/test/resources/drivers/geckodriver_mac" <br />
 
-# HCÓMO CORRER LOS TESTS EN WINDOWS
+# CÓMO CORRER LOS TESTS EN WINDOWS
 
 *Chrome <br />
 $ mvn test -Dwebdriver.chrome.driver="src/test/resources/drivers/chromedriver.exe" <br />
